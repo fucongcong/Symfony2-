@@ -1,6 +1,6 @@
 # Symfony2-
 ##1.登陆机制（思想可以参考）
-内部提供了登陆验证机制，路由地址为/login
+内部提供了登陆验证机制，路由地址为/login_check
 它提供了UserAuthenticationProvider，供我们继承。
 实现其内部的retrieveUser（获取数据库中得用户，我们需要实现UserProvider类继承自UserProviderInterface，来提供loadUserByUsername方法，获取用户）
 拿到用户之后，实现checkAuthentication进行验证，当前拿到的用户与输入的用户是否一致！
